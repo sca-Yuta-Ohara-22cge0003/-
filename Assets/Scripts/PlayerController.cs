@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
             score = score + 1;
 
             //線を表示
-            SetLine();
+            //SetLine();
 
             //UIの表示を更新
             SetCountText();
@@ -68,15 +68,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void SetLine()
-    {
-        if (pickupNomber >= 2)
-        {
-            line = GameObject.Find("StarLine" + lineNomber);
-            line.gameObject.SetActive(true);
-            lineNomber++;
-        }
-    }
+    //private void SetLine()
+    //{
+    //    if (pickupNomber >= 2)
+    //    {
+    //        line = GameObject.Find("StarLine" + lineNomber);
+    //        line.gameObject.SetActive(true);
+    //        lineNomber++;
+    //    }
+    //}
 
     void SetCountText()
     {
