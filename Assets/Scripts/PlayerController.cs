@@ -10,14 +10,23 @@ public class PlayerController : MonoBehaviour
     public Text scoreText;
     public Text winText;
 
-    private Rigidbody rb;
-    public int score;
-
     public int pickupNomber = 1;
-    public GameObject line;
-    public int lineNomber = 1;
 
-    //public string[] star = new string[] = {}
+    private Rigidbody rb;
+
+    public GameObject starline1;
+    public GameObject starline2;
+    public GameObject starline3;
+
+    public GameObject starlight1;
+    public GameObject starlight2;
+    public GameObject starlight3;
+    public GameObject starlight4;
+
+    public GameObject clearCamera;
+
+    //public string[] starname = new string[4]{"ボテイン","メサルティム","シュラタン","ハマル"};
+    //public int starNomber = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +35,19 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         //UIを初期化
-        score = 0;
-        SetCountText();
+        //SetCountText();
         winText.text = "";
-        //gameObject.SetActive(false);
+
+        starline1.SetActive(false);
+        starline2.SetActive(false);
+        starline3.SetActive(false);
+
+        starlight1.SetActive(false);
+        starlight2.SetActive(false);
+        starlight3.SetActive(false);
+        starlight4.SetActive(false);
+
+        clearCamera.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,38 +74,66 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
 
             //スコアを加算
-            score = score + 1;
+            //score = score + 1;
 
             //線を表示
-            //SetLine();
+            SetLine();
 
             //UIの表示を更新
-            SetCountText();
+            //SetCountText();
 
             pickupNomber++;
         }
     }
 
-    //private void SetLine()
-    //{
-    //    if (pickupNomber >= 2)
-    //    {
-    //        line = GameObject.Find("StarLine" + lineNomber);
-    //        line.gameObject.SetActive(true);
-    //        lineNomber++;
-    //    }
-    //}
-
-    void SetCountText()
+    void SetLine()
     {
-        //スコアの表示を更新
-        scoreText.text="Count: " + score.ToString();
-
-        //全てのアイテムを獲得した場合
-        if (score >= 4)
+        switch (pickupNomber)
         {
-            //リザルトの表示を更新
-            winText.text = "You Win!";
+            case 1:
+                starlight1.SetActive(true);
+                scoreText.text = "ボテイン";
+                break;
+
+            case 2:
+                starlight2.SetActive(true);
+                starline1.SetActive(true);
+                scoreText.text = "メサルティム";
+                break;
+
+            case 3:
+                starlight3.SetActive(true);
+                starline2.SetActive(true);
+                scoreText.text = "シュラタン";
+                break;
+
+            case 4:
+                starlight4.SetActive(true);
+                starline3.SetActive(true);
+                scoreText.text = "ハマル";
+
+                winText.text = "牡羊座";
+                clearCamera.SetActive(true);
+                break;
+
+            default:
+                break;
         }
     }
+
+    //void SetCountText()
+    //{
+    //    //スコアの表示を更新
+    //    scoreText.text = starname[starNomber];
+    //    starNomber++;
+
+    //    //全てのアイテムを獲得した場合
+    //    if (score >= 4)
+    //    {
+    //        //リザルトの表示を更新
+    //        winText.text = "牡羊座";
+
+    //        clearCamera.SetActive(true);
+    //    }
+    //}
 }

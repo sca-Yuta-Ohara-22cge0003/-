@@ -14,6 +14,26 @@ TagManager:
   - StarLine2
   - StarLine1
   - StarLine3
+  - PickUp5
+  - PickUp6
+  - PickUp7
+  - PickUp8
+  - PickUp9
+  - PickUp10
+  - PickUp11
+  - PickUp12
+  - PickUp13
+  - PickUp14
+  - PickUp15
+  - PickUp16
+  - PickUp17
+  - PickUp18
+  - PickUp19
+  - PickUp20
+  - PickUp21
+  - PickUp22
+  - PickUp23
+  - PickUp0
   layers:
   - Default
   - TransparentFX
