@@ -70,6 +70,7 @@ public class PlayerController2 : MonoBehaviour
         //Rigidbodyを取得
         rb = GetComponent<Rigidbody>();
 
+        scoreText.text = "";
         winText.text = "";
 
         starline1.SetActive(false);
@@ -135,6 +136,11 @@ public class PlayerController2 : MonoBehaviour
 
         //Rigidbodyに力を与えて玉を動かす
         rb.AddForce(movement * speed);　//AddForce:力を加える,()内は方向と速さ
+
+        if (pickupNomber == 23 && Input.GetKey(KeyCode.Space))
+        {
+            Application.Quit();
+        }
     }
 
     //玉がオブジェクトをすり抜けた時に呼び出されるメソッド
@@ -159,7 +165,7 @@ public class PlayerController2 : MonoBehaviour
         {
             case 1:
                 starlight1.SetActive(true);
-                scoreText.text = "";
+                scoreText.text = "エルナト";
                 break;
 
             case 2:
@@ -177,7 +183,7 @@ public class PlayerController2 : MonoBehaviour
             case 4:
                 starlight4.SetActive(true);
                 starline3.SetActive(true);
-                scoreText.text = "";
+                scoreText.text = "アイン";
                 break;
 
             case 5:
@@ -195,7 +201,7 @@ public class PlayerController2 : MonoBehaviour
             case 7:
                 starlight7.SetActive(true);
                 starline6.SetActive(true);
-                scoreText.text = "";
+                scoreText.text = "プレアデス星団";
                 break;
 
             case 8:
@@ -267,7 +273,7 @@ public class PlayerController2 : MonoBehaviour
             case 19:
                 starlight19.SetActive(true);
                 starline18.SetActive(true);
-                scoreText.text = "";
+                scoreText.text = "アルデバラン";
                 break;
 
             case 20:
@@ -285,7 +291,7 @@ public class PlayerController2 : MonoBehaviour
             case 22:
                 starlight22.SetActive(true);
                 starline21.SetActive(true);
-                scoreText.text = "";
+                scoreText.text = "ヒアデス星団";
                 break;
 
             case 23:

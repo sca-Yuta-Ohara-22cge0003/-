@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/New Scene.unity
+    guid: 9a28feb1d876df74d853591a53c4e8f1
+  - enabled: 1
+    path: Assets/Scenes/Ohitujiza.unity
+    guid: 10ec259a0d93c024da5b17bf81b509ed
+  - enabled: 1
+    path: Assets/Scenes/Ousiza.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

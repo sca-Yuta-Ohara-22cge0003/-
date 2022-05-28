@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public Text scoreText;
     public Text winText;
+    public Text nextText;
 
     public int pickupNomber = 1;
 
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject clearCamera;
 
+    //SceneChange SceneChange;
+
     //public string[] starname = new string[4]{"ボテイン","メサルティム","シュラタン","ハマル"};
     //public int starNomber = 0;
 
@@ -36,7 +40,10 @@ public class PlayerController : MonoBehaviour
 
         //UIを初期化
         //SetCountText();
+
+        scoreText.text = "";
         winText.text = "";
+        nextText.text = "";
 
         starline1.SetActive(false);
         starline2.SetActive(false);
@@ -62,6 +69,11 @@ public class PlayerController : MonoBehaviour
 
         //Rigidbodyに力を与えて玉を動かす
         rb.AddForce(movement * speed);　//AddForce:力を加える,()内は方向と速さ
+
+        if (pickupNomber == 5 && Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Ousiza");
+        }
     }
 
     //玉がオブジェクトをすり抜けた時に呼び出されるメソッド
@@ -113,6 +125,7 @@ public class PlayerController : MonoBehaviour
                 scoreText.text = "ハマル";
 
                 winText.text = "牡羊座";
+                nextText.text = "Please Press Spase";
                 clearCamera.SetActive(true);
                 break;
 

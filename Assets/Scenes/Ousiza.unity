@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -513,7 +513,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (11)
@@ -854,7 +854,7 @@ GameObject:
   - component: {fileID: 351332622}
   - component: {fileID: 351332621}
   - component: {fileID: 351332625}
-  - component: {fileID: 351332627}
+  - component: {fileID: 351332626}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -954,7 +954,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &351332627
+--- !u!114 &351332626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1898dc28d56636f40a671539142d5e42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 8
   scoreText: {fileID: 1198898094}
   winText: {fileID: 1746493476}
   pickupNomber: 0
@@ -1235,6 +1235,18 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.1
       objectReference: {fileID: 0}
@@ -1277,7 +1289,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (19)
@@ -2618,7 +2630,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (21)
@@ -2753,7 +2765,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (17)
@@ -2822,7 +2834,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (1)
@@ -3095,8 +3107,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3300,7 +3312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6339048088060479042, guid: b54cba102bbbc034f931008cc647da97, type: 3}
       propertyPath: m_TagString
-      value: PickUp23
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6661853797232568551, guid: b54cba102bbbc034f931008cc647da97, type: 3}
       propertyPath: m_IsTrigger
@@ -3362,7 +3374,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (15)
@@ -3441,7 +3453,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (3)
@@ -3466,6 +3478,18 @@ PrefabInstance:
     - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5117396762384026372, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3570,7 +3594,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: -5}
-  m_SizeDelta: {x: 160, y: 35}
+  m_SizeDelta: {x: 220, y: 35}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1198898094
 MonoBehaviour:
@@ -3668,7 +3692,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (13)
@@ -3737,7 +3761,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (9)
@@ -4264,7 +4288,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (5)
@@ -4333,7 +4357,7 @@ PrefabInstance:
     - target: {fileID: 5117396762384026374, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 561fe7c53354db740812c196e9ddee8b, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d1990d7aaa214e90648d772e387df, type: 2}
     - target: {fileID: 5117396762384026377, guid: 45efee95a6d9e0d40987001c34b96ce9, type: 3}
       propertyPath: m_Name
       value: PickUp (7)
@@ -4969,8 +4993,8 @@ Camera:
   m_GameObject: {fileID: 1519217648}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5729,11 +5753,11 @@ RectTransform:
   m_Father: {fileID: 805021580}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -140}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 80}
   m_SizeDelta: {x: 160, y: 35}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1746493476
 MonoBehaviour:
   m_ObjectHideFlags: 0
